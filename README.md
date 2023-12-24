@@ -7,7 +7,7 @@ Used to connect automation example project in the github with Jenkins.
 
 When use SSH key to connect with Github,
 1. create shh key from cmd
-   >ssh-keygen -t rsa -b 4096 -C "<email used in github account>"
+   >ssh-keygen -t rsa -b 4096 -C "email used in github account" 
    2 keys will be generated in "C:\Users\Iroshan\.ssh" path
 2. copy public key and paste to create a ssh key inside git setting
 3. create another credential inside Jenkins credential provider.
