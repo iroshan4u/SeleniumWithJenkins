@@ -1,11 +1,11 @@
 # SeleniumWithJenkins
->App used: Eclipse
+-App used: Eclipse
 
->Project name in Eclipse: SeleniumWebDriverManager
+-Project name in Eclipse: SeleniumWebDriverManager
 
->Used to connect automation example project in the github with Jenkins.
+-Used to connect automation example project in the github with Jenkins.
 
->When use SSH key to connect with Github,
+-When use SSH key to connect with Github,
 1. create shh key from cmd
    >ssh-keygen -t rsa -b 4096 -C "email used in github account" 
    
@@ -16,9 +16,9 @@
 4. Use this newly created credential for relavent job git Credentials
 5. Job will be run successfully and git project will be clone using SSH.
 
->If still error occure select "accept first connection" in the Git Host Key Verification Configuration.
+-If still error occure select "accept first connection" in the Git Host Key Verification Configuration.
 
->Run the Maven project from cmd with parameter pass; 
+-Run the Maven project from cmd with parameter pass; 
 always use -D before parameter name (parameter name- browser) 
 
  >mvn clean test -Dbrowser=chrome
