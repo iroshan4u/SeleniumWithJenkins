@@ -16,3 +16,7 @@ When use SSH key to connect with Github,
 5. Job will be run successfully and git project will be clone using SSH.
 
 If still error occure select "accept first connection" in the Git Host Key Verification Configuration.
+
+Run the Maven project from cmd with parameter pass; 
+always use -D before parameter name (parameter name- browser) 
+>mvn clean test -Dbrowser=chrome
