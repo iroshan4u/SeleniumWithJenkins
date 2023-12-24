@@ -18,12 +18,18 @@ public class WebDriverMgr {
 		System.out.println("Parameter value is: " + browsserName);
 
 		if (browsserName.contains("Chrome")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
 
 		} else if (browsserName.contains("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+		} else if (browsserName.contains("Firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}
+		else {
+			System.out.println("Wrong browser input!");
 		}
 
 		driver.manage().window().maximize();
