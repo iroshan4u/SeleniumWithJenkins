@@ -14,3 +14,5 @@ When use SSH key to connect with Github,
     give id and description. Use Useranme as github username. Enter private key value already haver for private key.
 4. Use this newly created credential for relavent job git Credentials
 5. Job will be run successfully and git project will be clone using SSH.
+
+If still error occure select "accept first connection" in the Git Host Key Verification Configuration.
