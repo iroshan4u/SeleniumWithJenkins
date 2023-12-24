@@ -20,4 +20,5 @@
 
 >Run the Maven project from cmd with parameter pass; 
 always use -D before parameter name (parameter name- browser) 
-   $>mvn clean test -Dbrowser=chrome
+
+ >mvn clean test -Dbrowser=chrome
