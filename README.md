@@ -22,3 +22,10 @@
 always use -D before parameter name (parameter name- browser) 
 
  >mvn clean test -Dbrowser=chrome
+
+Had to use 'ngrok' because jenkins host in localhost.
+ngrok:
+cross-platform application that enavles developers to expose a local development server to the internet with minimal effort
+
+
+
