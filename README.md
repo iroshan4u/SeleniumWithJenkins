@@ -23,9 +23,18 @@ always use -D before parameter name (parameter name- browser)
 
  >mvn clean test -Dbrowser=chrome
 
-Had to use 'ngrok' because jenkins host in localhost.
+I have seen recommendation to use 'ngrok' because jenkins host in localhost(but web was not worked).
 ngrok:
 cross-platform application that enavles developers to expose a local development server to the internet with minimal effort
 
+In Jenkins:
+To export the Job.
+java -jar jenkins-cli.jar -s <your server url> get-job <JOB NAME> > <JOB_NAME.xml>
+OR
+java -jar jenkins-cli.jar -s <your server url> -auth username:password get-job <JOB NAME> > <JOB_NAME.xml>
 
+To Create/import the Job
+java -jar jenkins-cli.jar -s <your server url> create-job <NEW_JOB_NAME> < <EXITING_JOB.xml>
+OR
+java -jar jenkins-cli.jar -s <your server url> -auth username:password create-job <NEW_JOB_NAME> < <EXITING_JOB.xml>
 
