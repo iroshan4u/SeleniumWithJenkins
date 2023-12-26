@@ -67,3 +67,6 @@ java -jar jenkins-cli.jar -s <your server url> create-job <NEW_JOB_NAME> < <EXIT
 OR
 java -jar jenkins-cli.jar -s <your server url> -auth username:password create-job <NEW_JOB_NAME> < <EXITING_JOB.xml>
 
+
+
+
