@@ -31,6 +31,21 @@ we'll send POST request to each of the URLs you provide.
 ngrok:
 cross-platform application that enavles developers to expose a local development server to the internet with minimal effort
 
+How to install git in GCP:
+Login to your Google Cloud Instance.
+then run (omitting the $, of course):
+$ which git
+should display something like
+/usr/bin/git
+if not, run:
+$ sudo apt-get update
+Allow the update to run. Then run:
+$ sudo apt-get install git
+Allow the install to run. Now running:
+$ which git
+should return something like:
+/usr/bin/git
+
 -In Jenkins:
 To export the Job.
 java -jar jenkins-cli.jar -s <your server url> get-job <JOB NAME> > <JOB_NAME.xml>
