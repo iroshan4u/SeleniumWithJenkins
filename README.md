@@ -27,7 +27,7 @@ always use -D before parameter name (parameter name- browser)
 Webhooks allo external services to be notified when certain events happen. When the specified events happen, 
 we'll send POST request to each of the URLs you provide.
 
--I have seen recommendation to use 'ngrok' because jenkins host in localhost(but web was not worked).
+-Inorder to config Webhook, I have seen recommendation to use 'ngrok' because jenkins host in localhost(but web was not worked).
 ngrok:
 cross-platform application that enavles developers to expose a local development server to the internet with minimal effort
 
