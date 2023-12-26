@@ -52,6 +52,10 @@ $ which git
 should return something like:
 /usr/bin/git
 
+-How to install maven in GCP:
+Allow the update to run. Then run:
+$ sudo apt-get install maven
+
 -In Jenkins:
 To export the Job.
 java -jar jenkins-cli.jar -s <your server url> get-job <JOB NAME> > <JOB_NAME.xml>
