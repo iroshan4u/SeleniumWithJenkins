@@ -56,16 +56,8 @@ should return something like:
 Allow the update to run. Then run:
 $ sudo apt-get install maven
 
--In Jenkins:
-To export the Job.
-java -jar jenkins-cli.jar -s <your server url> get-job <JOB NAME> > <JOB_NAME.xml>
-OR
-java -jar jenkins-cli.jar -s <your server url> -auth username:password get-job <JOB NAME> > <JOB_NAME.xml>
-
-To Create/import the Job
-java -jar jenkins-cli.jar -s <your server url> create-job <NEW_JOB_NAME> < <EXITING_JOB.xml>
-OR
-java -jar jenkins-cli.jar -s <your server url> -auth username:password create-job <NEW_JOB_NAME> < <EXITING_JOB.xml>
+-Jenkins File:
+The definition of a Jenkins pipeline is written into a text file called Jenkinsfile.
 
 
 
