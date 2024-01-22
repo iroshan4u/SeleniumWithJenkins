@@ -58,6 +58,7 @@ $ sudo apt-get install maven
 
 -Jenkins File:
 The definition of a Jenkins pipeline is written into a text file called Jenkinsfile.
+Here implement the Jenkins Pipeline by getting the jenkinsfile from Git SCM
 
 
 
