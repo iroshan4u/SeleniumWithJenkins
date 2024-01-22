@@ -2,6 +2,7 @@ package pkgmavenforjenkins;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
@@ -22,8 +23,10 @@ public class WebDriverMgr {
 
 		if (browsserName.contains("Chrome")) {
 			driver = new ChromeDriver();
+			 ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
 			System.setProperty("webdriver.chromedriver.driver", ".\\src\\main\\resources\\chromedriver.exe");
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(chromeOptions);
 
 		} else if (browsserName.contains("Edge")) {
 			driver = new EdgeDriver();
