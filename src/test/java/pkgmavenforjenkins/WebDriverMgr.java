@@ -13,25 +13,29 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 // C:\Users\Iroshan\eclipse-workspace\SeleniumWebDriverManager>mvn clean test -DBrowser=Chrome
 
 public class WebDriverMgr {
+
+	WebDriver driver = null;
+
 	@Parameters("Browser")
 	@Test
 	public void StartBrowser(String browsserName) {
 
-		WebDriver driver = null;
 		System.out.println("Parameter value is: " + browsserName);
 
 		if (browsserName.contains("Chrome")) {
-			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			System.setProperty("webdriver.chromedriver.driver", ".\\src\\main\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		} else if (browsserName.contains("Edge")) {
-			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+			System.setProperty("webdriver.chromedriver.driver", ".\\src\\main\\resources\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		} else if (browsserName.contains("Firefox")) {
-			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-		}
-		else {
+			System.setProperty("webdriver.chromedriver.driver", ".\\src\\main\\resources\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		} else {
 			System.out.println("Wrong browser input!");
 		}
 
