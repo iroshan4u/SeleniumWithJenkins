@@ -24,7 +24,7 @@ public class WebDriverMgr {
 		if (browsserName.contains("Chrome")) {
 			driver = new ChromeDriver();
 			 ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+			chromeOptions.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--headless");
 			System.setProperty("webdriver.chromedriver.driver", ".\\src\\main\\resources\\chromedriver.exe");
 			driver = new ChromeDriver(chromeOptions);
 
