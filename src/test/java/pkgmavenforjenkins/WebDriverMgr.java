@@ -7,8 +7,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 // run as maven command with parameter value for browser
 // C:\Users\Iroshan\eclipse-workspace\SeleniumWebDriverManager>mvn clean test -DBrowser=Chrome
 
